@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>MLP Farm Schedule Wallpaper</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #1a1625;
+  }
+
+  /* Container ที่ใช้ซ่อน iframe ส่วนเกิน */
+  .frame-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #1a1625;
+  }
+
+  /* iframe ที่ขยายเกินจอด้านบน เพื่อดัน banner หลุดออกไปนอกจอ */
+  iframe {
+    position: absolute;
+    top: -60px;          /* ดัน banner ขึ้นไปด้านบนนอกจอ */
+    left: 0;
+    width: 100vw;
+    height: calc(100vh + 60px);  /* ขยายเพิ่ม 60px เพื่อชดเชย */
+    border: none;
+    background: #1a1625;
+  }
+</style>
+</head>
+<body>
+  <div class="frame-container">
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbxlaUIcJt4lqOb_x6-3bKwcLZvBixxP_6JYu3OjnLRUN1PUGiz7QAoxvy1T6Yze6yCA/exec"
+      title="MLP Farm Schedule"
+      scrolling="no">
+    </iframe>
+  </div>
+</body>
+</html>
