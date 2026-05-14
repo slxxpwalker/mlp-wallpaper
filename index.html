@@ -3,6 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <title>MLP Farm Schedule Wallpaper</title>
+
+<!--
+  Auto-refresh ทุก 3600 วินาที (= 1 ชั่วโมง)
+  ปรับเวลาได้ตามต้องการ:
+    1800  = 30 นาที
+    3600  = 1 ชั่วโมง  ← ค่าปัจจุบัน
+    7200  = 2 ชั่วโมง
+    21600 = 6 ชั่วโมง
+    43200 = 12 ชั่วโมง
+    86400 = 24 ชั่วโมง (วันละครั้ง)
+-->
+<meta http-equiv="refresh" content="3600">
+
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body {
@@ -12,7 +25,6 @@
     background: #1a1625;
   }
 
-  /* Container ที่ใช้ซ่อน iframe ส่วนเกิน */
   .frame-container {
     position: fixed;
     top: 0;
@@ -23,13 +35,12 @@
     background: #1a1625;
   }
 
-  /* iframe ที่ขยายเกินจอด้านบน เพื่อดัน banner หลุดออกไปนอกจอ */
   iframe {
     position: absolute;
-    top: -60px;          /* ดัน banner ขึ้นไปด้านบนนอกจอ */
+    top: -60px;
     left: 0;
     width: 100vw;
-    height: calc(100vh + 60px);  /* ขยายเพิ่ม 60px เพื่อชดเชย */
+    height: calc(100vh + 60px);
     border: none;
     background: #1a1625;
   }
